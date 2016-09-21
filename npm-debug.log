@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/xinchen/.nvm/versions/node/v6.4.0/bin/node',
+1 verbose cli   '/Users/xinchen/.nvm/versions/node/v6.4.0/bin/npm',
+1 verbose cli   'star',
+1 verbose cli   'dev' ]
+2 info using npm@3.10.3
+3 info using node@v6.4.0
+4 silly mapToRegistry name dev
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'dev',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'dev',
+7 silly mapToRegistry   name: 'dev',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/dev
+9 verbose stack Error: Must be logged in to star/unstar packages
+9 verbose stack     at CachingRegistryClient.star (/Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/star.js:15:14)
+9 verbose stack     at /Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/lib/star.js:36:20
+9 verbose stack     at mapToRegistry (/Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+9 verbose stack     at /Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/lib/star.js:29:5
+9 verbose stack     at /Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+9 verbose stack     at Array.forEach (native)
+9 verbose stack     at /Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+9 verbose stack     at Array.forEach (native)
+9 verbose stack     at asyncMap (/Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+9 verbose stack     at EventEmitter.star (/Users/xinchen/.nvm/versions/node/v6.4.0/lib/node_modules/npm/lib/star.js:28:3)
+10 verbose cwd /Users/xinchen/workSapace-chenxin/react/learn-webpack
+11 error Darwin 15.6.0
+12 error argv "/Users/xinchen/.nvm/versions/node/v6.4.0/bin/node" "/Users/xinchen/.nvm/versions/node/v6.4.0/bin/npm" "star" "dev"
+13 error node v6.4.0
+14 error npm  v3.10.3
+15 error code ENEEDAUTH
+16 error need auth Must be logged in to star/unstar packages
+17 error need auth You need to authorize this machine using `npm adduser`
+18 verbose exit [ 1, true ]
